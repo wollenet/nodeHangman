@@ -39,7 +39,7 @@ var hangman = {
 				this.currentWord = new Word(this.wordBank[randomNumber]);
 				this.currentWord.getLets();
 
-				console.log(this.currentWord.wrodRender());
+				console.log(this.currentWord.wordRender());
 				this.continuePromptingPlayer();
 			} else{
 				this.resetGuessesRemaining();
@@ -86,15 +86,15 @@ var hangman = {
 						 that.display++;
 						 console.log('guesses remaining: ' + that.guessesRmaining);
 						 console.log('\n-----------');
-						 console.log(that.currentWord.wrodRender());
+						 console.log(that.currentWord.wordRender());
 						 console.log('\n-----------');
 					}
 					else{
 						cnonsole.log('You got it! Great Job!')
 
 						if(that.currentWord.wasWordFound() === true){
-							console.log(that.currentWord.wrodRender());
-							console.log('Congratulation! Your a winner!');
+							console.log(that.currentWord.wordRender());
+							console.log('Congratulation! You\'re a winner!');
 						}
 						else{
 							console.log('guesses remaining' + that.guessesRemaining);
