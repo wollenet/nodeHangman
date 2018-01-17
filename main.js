@@ -116,3 +116,5 @@ var hangman = {
 			});
 		}
 	}
+
+	nodehagman.startGame();
