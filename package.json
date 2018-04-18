@@ -1,18 +1,16 @@
 {
-  "name": "nodehangman",
+  "name": "hangman",
   "version": "1.0.0",
-  "description": "node hangman game",
-  "main": "main.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
+    "start": "node index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "nodeHangman"
-  },
-  "keywords": [
-    "Hangman"
-  ],
-  "author": "Ethan Wollenberg",
-  "license": "ISC"
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.0",
+    "inquirer": "^3.3.0"
+  }
 }
